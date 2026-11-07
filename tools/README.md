@@ -1,13 +1,13 @@
-# Tools Directory
+# Tools
 
-`ae_scripts/tools/` is the canonical home for AE-facing tools because it is synced into the live workspace by `sync.sh`.
+Two tool folders, split by what they talk to:
 
-This `tools/` directory is kept as the stable repo-level entry point for documentation and older commands. When a tool needs AE runtime behavior, prefer either:
+| Folder | What lives there |
+|---|---|
+| `ae_scripts/tools/` | Tools that run against After Effects: `run_jsx.sh` (safe JSX sender), `preflight.py` (ES3 lint), `fx.py` + effect dictionaries (matchName lookup), `dump_*.sh` (export keys/effects from a comp), `run_capture.sh`, `compare_comps.sh`, `clone_effect.sh`, `audit_keyframes.jsx`, `close_comps.jsx`, `dump_project_inventory.jsx` |
+| `tools/` | Tools that do not need AE: `fetch_reference.py`, `analyze_reference.py`, `extract_frames.swift`, `browser_frame_sampler.js` (references); `sheet.py`, `measure.py`, `diff_frames.py` (frames and comparisons); `retrospective.py`, `publish_case.sh`, `health_check.py` (repository workflow); `audio_transition_fit.py` |
 
-- call `ae_scripts/tools/<tool>` directly, or
-- keep a small compatibility wrapper here that delegates to `ae_scripts/tools/<tool>`.
-
-Do not maintain two independent implementations of the same AE tool.
+Each tool exists in exactly one place.
 
 ## Audio Transition Fit
 

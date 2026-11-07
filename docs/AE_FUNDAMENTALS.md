@@ -104,7 +104,7 @@
 | 合成里的一个图层 | `comp.layer(i)` 或 `comp.layer("名字")` |
 | 图层的 Transform 展开项 | `layer.property("ADBE Transform Group").property("ADBE Position")` |
 | Effect Controls 面板 | `layer.property("ADBE Effect Parade")` |
-| 面板里效果的显示名 | **不能直接用**，要用 matchName（`tools/fx.py` 查） |
+| 面板里效果的显示名 | **不能直接用**，要用 matchName（`ae_scripts/tools/fx.py` 查） |
 | 效果里的一个参数 | `fx.property("参数名")` 或 `fx.property(索引)`（`fx.py --params` 查真名） |
 | 打一个关键帧 | `prop.setValueAtTime(t, v)` |
 | Easy Ease（F9） | `prop.setTemporalEaseAtKey(i, inEase, outEase)` |

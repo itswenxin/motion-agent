@@ -12,7 +12,9 @@ Motion Agent is an After Effects panel, a local command bridge, a set of agent s
 tools that keep an AI's motion work editable and verifiable. Everything stays as native AE layers
 and real keyframes a designer can open in the Graph Editor: no baked renders, no black box.
 
-Made by [Wenxin Yan](https://wenxinin.com), a motion designer in the Bay Area.
+**Designed and built by [Wenxin Yan](https://wenxinin.com), a Brand & Motion Designer.** Motion Agent
+automates the repetitive After Effects operations. Creative direction, motion language, timing and
+every final decision stay with the designer.
 
 ## What it does
 
@@ -27,8 +29,9 @@ Made by [Wenxin Yan](https://wenxinin.com), a motion designer in the Bay Area.
 
 ## Where it has been used
 
-- **TikTok × FIFA World Cup 2026 campaign** (shipped): card systems, section transitions and
-  title animation for the campaign promo, built and iterated with the agent.
+- **[TikTok × FIFA World Cup 2026 campaign](https://wenxinin.com/work/motion/tiktok-ep-fifa-world-cup/)** (shipped):
+  I designed the motion; the agent built and iterated card systems, section transitions and title
+  animation in AE under my direction. See the final film in the portfolio.
 - **Launch films for two AI products** (take-home design challenges, 2026): full 30-second films
   built end to end in After Effects, one of them taken from first animatic to final in an afternoon.
 - **Reference recreations**: vertical app promos and UI motion rebuilt from Pinterest links.
@@ -91,8 +94,8 @@ Codex ───────┘   Motion Agent/runtime/            └─ writes 
 | `cases/` | 12 verified recipes and a runnable demo |
 | `bridge/` | The AE panel and the CLI clients for the command queue |
 | `ae_scripts/lib/easing.jsx` | Standard easing curves → AE speed and influence |
-| `ae_scripts/tools/` | `run_jsx.sh`, `preflight.py`, `fx.py`, `audit_keyframes.jsx`, `close_comps.jsx` |
-| `tools/` | Reference fetch and analysis, browser frame sampler, retrospective, contact sheets, measurement |
+| `ae_scripts/tools/` | Tools that talk to After Effects: `run_jsx.sh`, `preflight.py`, `fx.py`, `dump_*.sh`, `audit_keyframes.jsx`, `close_comps.jsx` |
+| `tools/` | Tools that don't need AE: reference fetch and analysis, browser frame sampler, contact sheets, measurement, retrospective ([which folder holds what](tools/README.md)) |
 | `installers/`, `dist/` | Package build scripts and ready-to-install zips |
 
 ## Principles

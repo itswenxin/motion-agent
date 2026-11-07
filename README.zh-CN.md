@@ -10,7 +10,7 @@
 Motion Agent 由四部分组成：一个 AE 面板、一条本地命令通道、一组 agent skills，以及一套让 AI 做的动效
 保持可编辑、可验证的工具。所有结果都是 AE 原生图层和真实关键帧，设计师打开图表编辑器就能改。
 
-作者：[Wenxin Yan](https://wenxinin.com)，湾区动效设计师。
+**由品牌与动效设计师 [Wenxin Yan](https://wenxinin.com) 设计和开发。** Motion Agent 负责自动化 After Effects 里重复的操作；创意方向、动效语言、节奏和每一个最终决定都由设计师掌控。
 
 ## 能做什么
 
@@ -25,7 +25,7 @@ Motion Agent 由四部分组成：一个 AE 面板、一条本地命令通道、
 
 ## 用在哪里
 
-- **TikTok × FIFA 世界杯 2026 宣传项目**（已上线）：卡片系统、段落转场和标题动画，由 agent 搭建和迭代。
+- **[TikTok × FIFA 世界杯 2026 宣传项目](https://wenxinin.com/work/motion/tiktok-ep-fifa-world-cup/)**（已上线）：动效由我设计，agent 按我的方向在 AE 里搭建和迭代卡片系统、段落转场和标题动画。成片见作品集。
 - **两个 AI 产品的发布片**（设计挑战，2026）：30 秒成片在 AE 里从头做完，其中一支一个下午从动态分镜做到定稿。
 - **参考复刻**：从 Pinterest 链接复刻竖版 App 宣传片和 UI 动效。
 
@@ -83,8 +83,8 @@ Codex ───────┘   Motion Agent/runtime/            └─ 写入 
 | `cases/` | 12 个实测配方和一个可运行的演示 |
 | `bridge/` | AE 面板和命令队列的命令行客户端 |
 | `ae_scripts/lib/easing.jsx` | 标准缓动曲线 → AE 速度和影响值 |
-| `ae_scripts/tools/` | `run_jsx.sh`、`preflight.py`、`fx.py`、`audit_keyframes.jsx`、`close_comps.jsx` |
-| `tools/` | 取片和分析、浏览器逐帧取样、复盘、截图拼图、测量 |
+| `ae_scripts/tools/` | 跟 AE 打交道的工具：`run_jsx.sh`、`preflight.py`、`fx.py`、`dump_*.sh`、`audit_keyframes.jsx`、`close_comps.jsx` |
+| `tools/` | 不需要 AE 的工具：取片和分析、浏览器逐帧取样、截图拼图、测量、复盘（[分工说明](tools/README.md)） |
 | `installers/`、`dist/` | 打包脚本和可直接安装的压缩包 |
 
 ## 原则

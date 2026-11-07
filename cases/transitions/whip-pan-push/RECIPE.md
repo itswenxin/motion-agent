@@ -44,7 +44,7 @@ push lands. Comp `Whip`: 1920×1080, 30 fps, 4 s; push at 1.60 → 2.10 s.
 
 ## Pitfalls hit
 
-- Directional Blur's real matchName is `ADBE Motion Blur` (looked up with `tools/fx.py`; guessing
+- Directional Blur's real matchName is `ADBE Motion Blur` (looked up with `ae_scripts/tools/fx.py`; guessing
   "Directional" fails silently).
 - Overscan on both sides would make plates overlap: B (higher in the stack) would cover A's right
   overscan, moving the seam 160 px left and showing a pink strip on the resting Scene A. Overscan only on

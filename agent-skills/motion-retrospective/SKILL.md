@@ -28,7 +28,7 @@ Do not wait to be asked again.
    `scripts/` (every successful mutating script, de-duplicated) and `stats.json`.
 
 2. **Capture evidence.** Grab 4–6 frames from the final render (`captureFrame` or
-   `tools/run_capture.sh`) and build a contact sheet with `tools/sheet.py`.
+   `ae_scripts/tools/run_capture.sh`) and build a contact sheet with `tools/sheet.py`.
    Save into `evidence/`. Never commit the video, the `.aep`, or client footage and fonts.
 
 3. **Review the timeline.** For each run of commands, write down:
