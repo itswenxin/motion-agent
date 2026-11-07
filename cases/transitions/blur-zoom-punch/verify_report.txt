@@ -1,0 +1,23 @@
+# verify_report — blur-zoom-punch (AE 26.0, 2026-11-06)
+## attempt 1 (A out 85 / in 30, cut speed 260)
+A key2 in speed=260 B key1 out speed=-260
+per-frame visible scale (A before cut, B from cut) / step / blur: f51(101.743/-/0) f52(103.383/1.64/0) f53(105.843/2.459/0.311) f54(109.452/3.609/3.358) f55(114.785/5.334/11.685) f56(122.922/8.137/29.237) f57(135.774/12.852/50.892) f58(153.602/17.828/63.359) f59(169.351/15.749/68.643) f60(180/10.649/70) f61(170.2/-9.8/68.643) f62(157.611/-12.588/63.359) f63(142.747/-14.865/50.892) f64(129.562/-13.184/29.237) f65(120.367/-9.195/11.685) f66(114.174/-6.193/3.358) f67(109.865/-4.309/0.311) f68(106.777/-3.088/0)
+## attempt 2 (A out 85 / in 40, cut speed 420)
+A key2 in speed=420 B key1 out speed=-420
+per-frame visible scale (A before cut, B from cut) / step / blur: f51(100.558/-/0) f52(101.179/0.62/0) f53(102.247/1.068/0.311) f54(104.105/1.858/3.358) f55(107.529/3.424/11.685) f56(114.545/7.016/29.237) f57(128.985/14.44/50.892) f58(147.954/18.969/63.359) f59(165.102/17.148/68.643) f60(180/14.898/70) f61(165.516/-14.484/68.643) f62(149.944/-15.572/63.359) f63(133.423/-16.522/50.892) f64(118.048/-15.375/29.237) f65(108.292/-9.756/11.685) f66(103.788/-4.504/3.358) f67(101.742/-2.046/0.311) f68(100.765/-0.977/0)
+## final
+param ADBE Box Blur2-0001 'Blur Radius' value=0 keys=3
+param ADBE Box Blur2-0002 'Iterations' value=2 keys=0
+param ADBE Box Blur2-0003 'Blur Dimensions' value=1 keys=0
+param ADBE Box Blur2-0004 'Repeat Edge Pixels' value=1 keys=0
+param ADBE Effect Built In Params 'Compositing Options' value=undefined keys=undefined
+A key2 in speed=600 B key1 out speed=-600
+per-frame visible scale (A before cut, B from cut) / step / blur: f51(101.251/-/0) f52(102.965/1.714/0) f53(105.79/2.825/0.311) f54(110.003/4.213/3.358) f55(115.883/5.88/11.685) f56(123.706/7.824/29.237) f57(133.752/10.046/50.892) f58(146.298/12.545/63.359) f59(161.621/15.323/68.643) f60(180/18.379/70) f61(160.053/-19.947/68.643) f62(141.24/-18.813/63.359) f63(125.807/-15.433/50.892) f64(115.259/-10.548/29.237) f65(108.881/-6.378/11.685) f66(105.154/-3.727/3.358) f67(102.963/-2.191/0.311) f68(101.664/-1.299/0)
+spans: TitleA 0-2, TitleB 2-4, RootA 0-2
+frame frames/t10_0.png t=1
+frame frames/t10_1.png t=1.8
+frame frames/t10_2.png t=1.9667
+frame frames/t10_3.png t=2
+frame frames/t10_4.png t=2.2
+frame frames/t10_5.png t=3
+saved learn_recipes.aep

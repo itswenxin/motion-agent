@@ -1,0 +1,26 @@
+# verify_report — film-grain-noise (AE 26.0, 2026-11-06)
+## attempt 1 (Size 28, Texture opacity = Amount, Noise = Amount*0.08) — rejected: blotchy
+Amount   0: flat-bg luma mean 74.0, stddev 0.00, mean |frame(1.0s) - frame(1.033s)| 0.00
+Amount  50: flat-bg luma mean 74.0, stddev 17.60, mean |frame(1.0s) - frame(1.033s)| 19.62
+Amount 100: flat-bg luma mean 74.4, stddev 34.82, mean |frame(1.0s) - frame(1.033s)| 38.77
+## final (Size 10, opacity = Amount*0.5, Noise = Amount*0.05)
+Amount=0 texOpacity=0 noiseAmt=0 fractalScale=10
+frame frames/t13a0_0.png t=1
+frame frames/t13a0_1.png t=1.03333333333333
+Amount=100 texOpacity=50 noiseAmt=5 fractalScale=10
+frame frames/t13a100_0.png t=1
+frame frames/t13a100_1.png t=1.03333333333333
+Amount=40 texOpacity=20 noiseAmt=2 fractalScale=10
+frame frames/t13a40_0.png t=1
+frame frames/t13a40_1.png t=1.03333333333333
+evolution: t0=0 t0.03333333333333=180 t1=5400 t4=21600
+texture blend=5226 (OVERLAY=5226)
+expressions=3 errors=0
+frame frames/t13_0.png t=0.5
+frame frames/t13_1.png t=1.5
+frame frames/t13_2.png t=2.5
+frame frames/t13_3.png t=3.5
+saved learn_recipes.aep
+Amount   0: flat-bg luma mean 74.0, stddev 0.00, mean |frame(1.0s) - frame(1.033s)| 0.00
+Amount  40: flat-bg luma mean 73.7, stddev 7.09, mean |frame(1.0s) - frame(1.033s)| 7.80
+Amount 100: flat-bg luma mean 73.8, stddev 17.90, mean |frame(1.0s) - frame(1.033s)| 19.75

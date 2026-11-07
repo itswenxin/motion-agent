@@ -1,0 +1,11 @@
+Created standalone reconstruction, not original archived AEP.
+demo=~/Desktop/Motion-Agent-Demo/Checkmark_Demo.aep
+previousProject=null
+recovery=~/Desktop/Motion-Agent-Demo/Recovery/Existing_AE_Project_Recovery_1793215363600.aep
+compositions=2
+layersPerComposition=3
+scaleKeys=4
+opacityKeys=4
+sourceScaleTimes=3.25,3.375,3.45833333333333,3.5
+externalAssets=0
+thirdPartyEffects=0

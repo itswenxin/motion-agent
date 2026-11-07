@@ -1,0 +1,33 @@
+# verify_report — light-sweep-chromatic (AE 26.0, 2026-11-06)
+## attempt 1 build log (FULL_OFF = 11)
+ERR Error: After Effects error: Unable to call “setValue” because of parameter 1. Value 11 out of range 1 to 10.
+## attempt 2 (white title) — sweep invisible on white
+sweepCenter(G): t0.5=[227.54,539.574] t0.8=[227.54,539.574] t1.1=[362.953,539.574] t1.4=[957.017,539.574] t1.7=[1551.082,539.574] t2=[1686.494,539.574] t3=[1686.494,539.574]
+sweepCenter(R): t1.1=[362.953,539.574] t1.4=[957.017,539.574]
+posR: t0.5=[960,640,0] t0.8=[960,640,0] t1.1=[950.147,640,0] t1.4=[946,640,0] t1.7=[955.86,640,0] t2=[960,640,0] t3=[960,640,0]
+## final
+OK Sweep layers=4 textBox left=488 right=1426 cy=540
+sweepCenter(G): t0.5=[227.54,539.574] t0.8=[227.54,539.574] t1.1=[362.953,539.574] t1.4=[957.017,539.574] t1.7=[1551.082,539.574] t2=[1686.494,539.574] t3=[1686.494,539.574]
+sweepCenter(R): t1.1=[362.953,539.574] t1.4=[957.017,539.574]
+posR: t0.5=[960,640,0] t0.8=[960,640,0] t1.1=[950.147,640,0] t1.4=[946,640,0] t1.7=[955.86,640,0] t2=[960,640,0] t3=[960,640,0]
+posB: t0.5=[960,640,0] t0.8=[960,640,0] t1.1=[969.853,640,0] t1.4=[974,640,0] t1.7=[964.14,640,0] t2=[960,640,0] t3=[960,640,0]
+TitleR blend=5212 shift R/G/B from=2/10/10
+TitleG blend=5220 shift R/G/B from=10/3/10
+TitleB blend=5220 shift R/G/B from=10/10/4
+expressions=2 errors=0
+frame frames/t14_0.png t=0.5
+frame frames/t14_1.png t=1.1
+frame frames/t14_2.png t=1.4
+frame frames/t14_3.png t=1.7
+frame frames/t14_4.png t=2.3
+frame frames/t14_5.png t=3
+saved learn_recipes.aep
+## Shift Channels index probe (white solid, Take Red From = k, rendered pixel)
+k5 255, k6 0, k7 255, k8 0, k9 255, k10 0 (red channel); range error at 11
+## sweep position in pixels
+t=0.5 keyed center x=227.5 | text px on row=521 median luma=163.3 max luma=163.3 mean x of 40 brightest=540.5
+t=1.1 keyed center x=363.0 | text px on row=699 median luma=141.7 max luma=163.3 mean x of 40 brightest=555.6
+t=1.4 keyed center x=957.0 | text px on row=763 median luma=141.7 max luma=255.0 mean x of 40 brightest=938.5
+t=1.7 keyed center x=1551.1 | text px on row=594 median luma=163.3 max luma=167.9 mean x of 40 brightest=844.5
+t=3.0 keyed center x=1686.5 | text px on row=521 median luma=163.3 max luma=163.3 mean x of 40 brightest=540.5
+1.4s fringe samples row 540:  [(470, (14, 15, 19)), (473, (14, 15, 19)), (476, (14, 15, 19)), (479, (14, 15, 19)), (482, (14, 15, 19)), (485, (14, 15, 19)), (488, (14, 15, 19)), (491, (14, 15, 19)), (494, (14, 15, 19)), (497, (14, 15, 19))]

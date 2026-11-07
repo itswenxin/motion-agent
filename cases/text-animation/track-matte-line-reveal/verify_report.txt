@@ -1,0 +1,43 @@
+# verify_report — track-matte-line-reveal (AE 26.0, 2026-11-06)
+Line1 trackMatteType=5013 matte=Matte1 matteEnabled=false
+  keys=4 ease k1 out=60 k2 in=85
+  posY: t0=[960,562.526,0] t0.3=[960,562.526,0] t0.65=[960,460.05,0] t1=[960,425.4,0] t1.24=[960,425.4,0] t2=[960,425.4,0] t3.2=[960,425.4,0] t3.5=[960,390.313,0] t3.99=[960,288.274,0] t4.4=[960,288.274,0]
+Line2 trackMatteType=5013 matte=Matte2 matteEnabled=false
+  keys=4 ease k1 out=60 k2 in=85
+  posY: t0=[960,754.671,0] t0.3=[960,754.671,0] t0.65=[960,715.751,0] t1=[960,593.071,0] t1.24=[960,590.4,0] t2=[960,590.4,0] t3.2=[960,590.4,0] t3.5=[960,578.54,0] t3.99=[960,426.129,0] t4.4=[960,426.129,0]
+Line3 trackMatteType=5013 matte=Matte3 matteEnabled=false
+  keys=4 ease k1 out=60 k2 in=85
+  posY: t0=[960,913.855,0] t0.3=[960,913.855,0] t0.65=[960,908.97,0] t1=[960,768.604,0] t1.24=[960,755.4,0] t2=[960,755.4,0] t3.2=[960,755.4,0] t3.5=[960,754.341,0] t3.99=[960,596.945,0] t4.4=[960,596.945,0]
+expressions=0 errors=0
+frame frames/t01_0.png t=0.1
+frame frames/t01_1.png t=0.55
+frame frames/t01_2.png t=0.85
+frame frames/t01_3.png t=1.6
+frame frames/t01_4.png t=3.45
+frame frames/t01_5.png t=4.3
+saved learn_recipes.aep
+## Pixel check (share of pixels with max channel > 80) per line box
+frame 0
+545,356,1375,493 bright=0.000 mean [14.0, 15.0, 19.0]
+648,508,1272,672 bright=0.000 mean [14.0, 15.0, 19.0]
+520,676,1400,834 bright=0.000 mean [14.0, 15.0, 19.0]
+frame 1
+545,356,1375,493 bright=0.031 mean [21.4, 22.4, 26.3]
+648,508,1272,672 bright=0.000 mean [14.0, 15.0, 19.0]
+520,676,1400,834 bright=0.000 mean [14.0, 15.0, 19.0]
+frame 2
+545,356,1375,493 bright=0.275 mean [78.9, 79.7, 82.6]
+648,508,1272,672 bright=0.258 mean [41.9, 50.7, 78.8]
+520,676,1400,834 bright=0.190 mean [58.8, 59.6, 62.9]
+frame 3
+545,356,1375,493 bright=0.263 mean [75.5, 76.3, 79.5]
+648,508,1272,672 bright=0.257 mean [42.2, 50.8, 78.4]
+520,676,1400,834 bright=0.247 mean [71.9, 72.6, 75.7]
+frame 4
+545,356,1375,493 bright=0.176 mean [54.8, 55.8, 59.5]
+648,508,1272,672 bright=0.255 mean [42.0, 50.6, 78.0]
+520,676,1400,834 bright=0.246 mean [71.8, 72.6, 75.6]
+frame 5
+545,356,1375,493 bright=0.000 mean [14.0, 15.0, 19.0]
+648,508,1272,672 bright=0.000 mean [14.0, 15.0, 19.0]
+520,676,1400,834 bright=0.000 mean [14.0, 15.0, 19.0]

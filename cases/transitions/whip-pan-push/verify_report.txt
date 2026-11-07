@@ -1,0 +1,19 @@
+# verify_report — whip-pan-push (AE 26.0, 2026-11-06)
+adjustment=true effect=ADBE Motion Blur
+  param 1 ADBE Motion Blur-0001 'Direction' numKeys=0
+  param 2 ADBE Motion Blur-0002 'Blur Length' numKeys=3
+  param 3 ADBE Effect Built In Params 'Compositing Options' numKeys=undefined
+per-frame rigX / speed(px/frame) / blur: f46(960/0/0) f47(960/0/0) f48(960/0/0) f49(955.726/4.274/2.02) f50(941.224/14.501/10.189) f51(912.954/28.27/32.175) f52(864.897/48.057/85.063) f53(785.503/79.394/121.485) f54(647.125/138.378/134.943) f55(346.267/300.857/139.54) f56(-346.265/692.533/139.54) f57(-647.123/300.858/134.943) f58(-785.495/138.372/121.485) f59(-864.888/79.393/85.063) f60(-912.954/48.066/32.175) f61(-941.224/28.27/10.189) f62(-955.726/14.501/2.02) f63(-960/4.274/0) f64(-960/0/0) f65(-960/0/0)
+peak speed 692.533 px/frame ending at t=1.867
+frame frames/t08_0.png t=1
+frame frames/t08_1.png t=1.75
+frame frames/t08_2.png t=1.85
+frame frames/t08_3.png t=1.95
+frame frames/t08_4.png t=2.05
+frame frames/t08_5.png t=3
+saved learn_recipes.aep
+edge strips (x 1880-1920 and 0-40) at 1.0 s and 3.0 s:
+1880,100,1920,980 bright=1.000 mean [124.0, 156.0, 255.0]
+0,100,40,980 bright=1.000 mean [124.0, 156.0, 255.0]
+1880,100,1920,980 bright=1.000 mean [255.0, 122.0, 198.0]
+0,100,40,980 bright=1.000 mean [255.0, 122.0, 198.0]

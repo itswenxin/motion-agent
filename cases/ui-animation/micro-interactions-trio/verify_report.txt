@@ -1,0 +1,16 @@
+# verify_report — micro-interactions-trio (AE 26.0, 2026-11-06)
+spinner: maxHeadStep/frame=54.94deg maxTailStep/frame=56.898deg arcLen range=10.8..280.719deg
+  around cycle boundary: f40(s73 e78 o0 head640.8 tail622.8) f41(s73.956 e78 o0 head649.8 tail635.243) f42(s74.567 e78 o0 head658.8 tail646.44) f43(s74.898 e78 o0 head667.8 tail656.633) f44(s75 e78 o0 head676.8 tail666) f45(s0 e3 o270 head685.8 tail675) f46(s0 e3.093 o270 head695.134 tail684) f47(s0 e3.393 o270 head705.216 tail693) f48(s0 e3.944 o270 head716.198 tail702) f49(s0 e4.801 o270 head728.283 tail711) f50(s0 e6.043 o270 head741.756 tail720)
+barEnd: t0.3=0 t0.7=27.58 t1.1=38 t1.4=38 t2=64.129 t2.4=74 t3=87.368 t3.4=100 t4=100
+barLabel: t0.3=0% t0.7=28% t1.1=38% t1.4=38% t2=64% t2.4=74% t3=87% t3.4=100% t4=100%
+knobPos: t0.9=[1142,780,0] t1.1=[1149.847,780,0] t1.175=[1198.873,780,0] t1.35=[1218,780,0] t2=[1218,780,0] t3.1=[1210.153,780,0] t3.35=[1142,780,0] t4=[1142,780,0]
+knobScale: t0.9=[100,100,100] t1.1=[108.84,95.58,100] t1.175=[118,91,100] t1.35=[100,100,100] t2=[100,100,100] t3.1=[108.84,95.58,100] t3.35=[100,100,100] t4=[100,100,100]
+trackColor: t0.9=[0.227,0.247,0.294,1] t1.1=[0.242,0.312,0.337,1] t1.175=[0.333,0.72,0.605,1] t1.35=[0.369,0.878,0.71,1] t2=[0.369,0.878,0.71,1] t3.1=[0.354,0.813,0.667,1] t3.35=[0.227,0.247,0.294,1] t4=[0.227,0.247,0.294,1]
+expressions=1 errors=0
+frame frames/t07_0.png t=0.4
+frame frames/t07_1.png t=1.17
+frame frames/t07_2.png t=1.5
+frame frames/t07_3.png t=2.2
+frame frames/t07_4.png t=3.17
+frame frames/t07_5.png t=3.9
+saved learn_recipes.aep

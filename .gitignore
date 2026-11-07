@@ -1,0 +1,48 @@
+# ── Large media: never versioned ──────────────────────────
+# Reference videos (1.6 GB) — tutorials and reference films, re-downloadable
+参考视频/
+# Session recordings (1.5 GB) — Wenxin's own capture for reporting.
+# Append-only source material, not an agent asset. The agent never writes here.
+训练录屏/
+
+# ── Render output: regenerable ────────────────────────────
+ae_scripts/out/
+ae-ai-bridge/runtime/
+ae-ai-bridge/runtime_ref_frames/
+ae-ai-bridge/commands/
+bridge/runtime/
+bridge/runtime
+bridge/runtime_LOCAL_BACKUP_*/
+bridge/runtime_SYMLINK_BACKUP_*/
+bridge/commands/
+**/out/
+*.mov
+*.mp4
+*.webm
+*.aep
+*.aep Logs/
+
+# Keep the curated before/after frames inside cases/, drop stray preview renders
+ae-ai-bridge/*.png
+video_analysis_*/
+
+# ── System and scratch files ──────────────────────────────
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+*.swp
+*~
+.ae_running.lock
+__pycache__/
+*.pyc
+.last_osascript_err
+.package-build/
+
+# Retrospective drafts (tools/retrospective.py); finished cases move to cases/<category>/
+cases/_inbox/
+
+# Downloaded reference videos (tools/fetch_reference.py) belong to their creators: never commit
+refs/
+tools/.bin/
