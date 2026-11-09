@@ -57,6 +57,34 @@ Tell the user in 3–5 lines what you measured and how you will build it before 
 - One short word per comp and layer name.
 - Save a backup before each structural change.
 
+### Pixel-level matches and 3D devices
+
+When the reference has a 3D phone (or any rigid object) and the user wants a frame-exact match:
+
+1. **Match the lens first.** Measure perspective (near vs far screen edge at several tilts) and try
+   camera zooms until the projection fits; then use that lens for the whole film with HOLD keys on
+   the camera. A wrong lens makes every pose fit only part of the frames.
+2. **Fit the pose to the reference.** Per frame, find the screen edge and the body outline along
+   scan lines and solve position, X/Y/Z rotation and scale by least squares through the camera.
+   When only part of the device is visible, fix the angle that cannot be determined. After every
+   fit, check the turn direction by eye (which side of the device shows), not just the error number.
+3. **Compress samples into a few keys** with `tools/fit_keys.py` (monotone cubic, shared key times,
+   one segment per shot, HOLD at cuts) and apply them with the JSX it writes
+   (`ae_scripts/tools/apply_keys.jsx`). Influence 33.333 % and speed = slope × fps make AE's Bézier
+   keys identical to the fitted spline.
+4. **Match the body and the screen separately**: scale only the body layers about the device centre
+   when the outline is off but the screen edges fit.
+5. **Lay out screen content on a rectified reference**: unproject the reference screen to a flat
+   view with the fitted pose, then move and scale regions (title, cards, rows, tab bar) to match.
+6. **Distrust large measurement errors** until a close crop confirms them; duplicated frames in the
+   reference cannot be matched by smooth motion.
+7. **Every round**: per-shot error tables, ours-over-reference sheets, `tools/coarse_check.py` for
+   the whole film, a scan for phone-attached layers visible while the phone is hidden, and the
+   keyframe audit.
+8. **Protect progress**: generate data files with `json.dumps`, never by hand (one stray `]` opened
+   an error dialog that silently swallowed every later script); treat a missing report file as
+   "AE is blocked" and stop; save after every verified fix.
+
 ## 4. Compare and iterate
 
 Render the same timestamps as the reference frames and put them side by side:

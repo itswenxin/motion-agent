@@ -17,7 +17,9 @@ in `agent-skills/`; tools live in `tools/` and `ae_scripts/`.
   (AE runs one script at a time), and an explicit timeout. Keep each script under ~30 s; split big builds.
 - **Never guess an effect `matchName`.** Display names and matchNames differ in most cases and a
   wrong one fails silently. Look it up with `ae_scripts/tools/fx.py`.
-- **No dialogs** (`alert`, `confirm`, `prompt`). Scripts write their results to a file.
+- **No dialogs** (`alert`, `confirm`, `prompt`). Scripts write their results to a file. A missing
+  result file means AE is blocked by a dialog: stop sending scripts and ask the user to dismiss it.
+- **Generate data files with code** (`json.dumps`), never by hand, and save after every verified fix.
 - **Never touch a project you did not open.** Check `app.project.file` and `app.project.dirty`
   first; save a timestamped backup before structural edits.
 
@@ -88,6 +90,12 @@ Full workflow: `agent-skills/motion-replicate`. The rules behind it:
    1920×1080 are wrong for 1080×1920.
 5. **Compare against the reference, not your intent.** Put the reference in the comp as a guide
    layer first, then measure, then compare every round.
+6. **Lens before pose.** With a 3D device, measure the reference's perspective and lock the camera
+   lens for the whole film before fitting any pose.
+7. **Fit, then compress.** Solve per-frame values from the reference, then keep only the keys needed
+   to stay within tolerance (`tools/fit_keys.py`); never key every measured sample.
+8. **Check the whole film every round** (`tools/coarse_check.py`): a fix in one shot can break another,
+   and "before vs after" only proves nothing broke, not that it matches.
 
 6. **Check every transition frame by frame.** For each cut or transition, export about 8 frames
    on each side from the reference at its own frame rate and the same frames from AE, put them

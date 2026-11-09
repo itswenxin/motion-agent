@@ -23,7 +23,7 @@ every final decision stay with the designer.
 | **Drive a live AE project** | Claude Code / Codex send JSX through a local file queue; the panel runs it inside AE. ES3-linted, one script at a time, with timeouts, so AE never hangs on a modal error. |
 | **Recreate a reference from a link** | Paste a Pinterest, Behance, Vimeo or video link. The agent fetches or samples the clip, measures size, frame rate, holds, cuts, loop and palette, rebuilds it with keyframes, and checks every transition frame by frame. |
 | **Smooth, editable motion** | Real keyframes with standard easing curves (Penner, Material 3, IBM Carbon) converted exactly to AE speed and influence. A keyframe audit flags linear keys, traced-sample keys and speed wobbles. |
-| **Verify with numbers** | Values sampled per frame, frames captured and compared side by side with the reference. |
+| **Verify with numbers** | Values sampled per frame, frames captured and compared side by side with the reference, and a whole-film check that ranks shots by how far they are from it. Measured motion is compressed into a few smooth keys instead of one key per frame. |
 | **Learn from every finished piece** | When a piece is approved, the agent replays the whole build and turns it into reusable recipes and rules. |
 | **Stay fast** | RAM caches purged automatically during long sessions; the disk cache is cleared at 20 GB once the project is saved. |
 
@@ -95,7 +95,7 @@ Codex ───────┘   Motion Agent/runtime/            └─ writes 
 | `bridge/` | The AE panel and the CLI clients for the command queue |
 | `ae_scripts/lib/easing.jsx` | Standard easing curves → AE speed and influence |
 | `ae_scripts/tools/` | Tools that talk to After Effects: `run_jsx.sh`, `preflight.py`, `fx.py`, `dump_*.sh`, `audit_keyframes.jsx`, `close_comps.jsx` |
-| `tools/` | Tools that don't need AE: reference fetch and analysis, browser frame sampler, contact sheets, measurement, retrospective ([which folder holds what](tools/README.md)) |
+| `tools/` | Tools that don't need AE: reference fetch and analysis, browser frame sampler, contact sheets, measurement, key fitting, whole-film check, retrospective ([which folder holds what](tools/README.md)) |
 | `installers/`, `dist/` | Package build scripts and ready-to-install zips |
 
 ## Principles
